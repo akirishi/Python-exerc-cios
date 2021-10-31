@@ -3,5 +3,4 @@
 
 print('Desconto!!')
 x = float(input('Valor do Produto:R$ '))
-y = x - (x * 5 / 100)
-print(f'Valor final:{y:.2f}')
+print(f'Valor final:{x - (x * 5 / 100):.2f}')
