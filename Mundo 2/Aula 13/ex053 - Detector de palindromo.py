@@ -1,6 +1,5 @@
 x = str(input('Digite uma frase: ')).strip().upper()
-y = x.split()
-z = ''.join(y)
+z = ''.join(x.split())
 i = ''
 
 for t in range(len(z) - 1, - 1, -1):

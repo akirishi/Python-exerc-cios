@@ -5,9 +5,13 @@
 from random import shuffle
 
 print('Ordem de apresentação')
-a1 = str(input('Aluno 1: '))
-a2 = str(input('Aluno 2: '))
-a3 = str(input('aluno 3: '))
-a4 = str(input('Aluno 4: '))
-li = [a1, a2, a3, a4]
-print(f'A ordem é {shuffle(li)}')
+x = int(input('Qantos alunos vão apresentar? '))
+alunos = list()
+while len(alunos) < x:
+    y = str(input(f'Aluno {len(alunos) + 1}: '))
+    if y in alunos:
+        print('Não pode haver alunos repetidos')
+    else:
+        alunos.append(y)
+shuffle(alunos)
+print(f'A ordem é {alunos}')

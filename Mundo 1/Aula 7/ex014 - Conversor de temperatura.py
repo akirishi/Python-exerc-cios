@@ -59,6 +59,5 @@ while True:
     terminou = str(input('Terminou? [S/N] ').strip().upper()[0])
     if terminou == 'S':
         break
-
 print('Fim')
 print('-' * 20)

@@ -1,13 +1,15 @@
-num = []
-x = 0
+from random import randint
+
+num = list()
+
 while True:
-    x = int(input('Digite um valor: '))
+    x = randint(0, 20)
     if x in num:
-        print('Valor duplicado não pode ser adicionado')
+        print(f'Valor duplicado! {x} não pode ser adicionado')
     else:
         num.append(x)
-        print('Valor adicionado com sucesso!')
-    y = str(input('Continuar? [S/N]: ')).upper().strip()
-    if y == 'N':
+        print(f'Valor {x} adicionado com sucesso!')
+    opt = str(input('Continuar? [S/N]: ')).upper().strip()
+    if opt == 'N':
         break
 print(f'Os valores únicos digitados foram {num.sort()}')
